@@ -32,7 +32,14 @@ html {
 
 
 section[id] {
-  scroll-margin-top: 20px;
+  scroll-margin-top: 90px;
+}
+
+/* ===== Menú de navegación fijo al desplazarse ===== */
+.contenido.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
 }
 
 .contenido {
@@ -154,7 +161,7 @@ section[id] {
     <div class="container-fluid">
 
         <!-- NAVEGACIÓN -->
-        <header class="contenido">
+        <header class="contenido sticky-top">
             <nav class="navbar navbar-expand-lg navbar-light bg-light rounded px-3">
                 <div class="container-fluid">
 
