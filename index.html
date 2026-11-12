@@ -24,16 +24,16 @@
   --cozy-accent: #e8a33d;
 }
 
-/* ===== Reemplazo de azul por rojo en todos los elementos Bootstrap ===== */
-.bg-primary {
+/* ===== Colores rojos de Bootstrap ===== */
+.bg-danger {
   background-color: #ff0000 !important;
 }
 
-.text-primary {
+.text-danger {
   color: #ff0000 !important;
 }
 
-.btn-primary {
+.btn-danger {
   --bs-btn-bg: #ff0000;
   --bs-btn-border-color: #ff0000;
   --bs-btn-hover-bg: #cc0000;
@@ -44,12 +44,46 @@
   border-color: #ff0000 !important;
 }
 
-.btn-outline-primary {
+.btn-outline-danger {
   --bs-btn-color: #ff0000;
   --bs-btn-border-color: #ff0000;
   --bs-btn-hover-bg: #ff0000;
   --bs-btn-hover-border-color: #ff0000;
   color: #ff0000 !important;
+  border-color: #ff0000 !important;
+}
+
+/* ===== Rojo para los componentes Bootstrap ===== */
+.bg-danger,
+.badge.bg-danger,
+.container.bg-danger {
+  background-color: #ff0000 !important;
+}
+
+.text-danger {
+  color: #ff0000 !important;
+}
+
+.btn-danger {
+  background-color: #ff0000 !important;
+  border-color: #ff0000 !important;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: #cc0000 !important;
+  border-color: #cc0000 !important;
+}
+
+.btn-outline-danger {
+  color: #ff0000 !important;
+  border-color: #ff0000 !important;
+}
+
+.btn-outline-danger:hover,
+.btn-outline-danger:focus {
+  color: #ffffff !important;
+  background-color: #ff0000 !important;
   border-color: #ff0000 !important;
 }
 
@@ -75,7 +109,7 @@ section[id] {
   z-index: 1030;
 }
 
-/* ===== Estilo azul y negro de la barra de navegación ===== */
+/* ===== Estilo rojo de la barra de navegación ===== */
 .contenido.sticky-top nav.navbar {
   background-color: #ff0000 !important;
   border: 2px solid #ff0000;
@@ -186,20 +220,20 @@ section[id] {
   }
 }
 
-/* ===== Todos los elementos azules de Bootstrap en rojo ===== */
-.bg-primary,
-.badge.bg-primary,
-.container.bg-primary {
+/* ===== Todos los elementos principales en rojo ===== */
+.bg-danger,
+.badge.bg-danger,
+.container.bg-danger {
   background-color: #ff0000 !important;
 }
 
-.text-primary,
+.text-danger,
 a:not(.btn):not(.btn-whatsapp-flotante) {
   --bs-link-color: #ff0000;
   --bs-link-hover-color: #cc0000;
 }
 
-.btn-primary {
+.btn-danger {
   --bs-btn-bg: #ff0000;
   --bs-btn-border-color: #ff0000;
   --bs-btn-hover-bg: #cc0000;
@@ -210,7 +244,7 @@ a:not(.btn):not(.btn-whatsapp-flotante) {
   border-color: #ff0000 !important;
 }
 
-.btn-outline-primary {
+.btn-outline-danger {
   --bs-btn-color: #ff0000;
   --bs-btn-border-color: #ff0000;
   --bs-btn-hover-bg: #ff0000;
@@ -288,12 +322,12 @@ a:not(.btn):not(.btn-whatsapp-flotante) {
 
             <!-- INICIO / EXPERIENCIAS (carrusel) -->
             <section class="contenido py-3" id="inicio">
-                <div class="container bg-primary text-white p-4 shadow-sm rounded" id="experiencias">
+                <div class="container bg-danger text-white p-4 shadow-sm rounded" id="experiencias">
                     <div class="row align-items-center g-4">
 
                         <!-- Columna 1: información -->
                         <div class="col-12 col-md-5">
-                            <span class="badge bg-primary mb-2">Destacado</span>
+                            <span class="badge bg-danger mb-2">Destacado</span>
                             <h2 class="fw-bold">Hamburguesas ricas</h2>
                             <p class="text-white-50">
                                 Tenemos muchos locales por explorar, encontranos.
@@ -517,7 +551,7 @@ a:not(.btn):not(.btn-whatsapp-flotante) {
                                     </label>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">
+                                <button type="submit" class="btn btn-danger w-100 py-2 fw-bold">
                                     Enviar solicitud
                                 </button>
 
